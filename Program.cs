@@ -1,2 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿Console.InputEncoding = System.Text.Encoding.GetEncoding("utf-16");
+Console.WriteLine("Введите строки массива через пробел");
+string input = Console.ReadLine()!;
+string[] inputArray = input.Split(' ');
